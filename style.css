@@ -1,0 +1,338 @@
+*{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/* Nav bar */
+.navbar-brand img {
+    width: 3rem;
+}
+
+.navbar-collapse {
+	text-align: right;
+}
+
+section#nav-bar {
+    background-color: #0B283A;
+}
+
+i.fa.fa-bars {    
+    color:white;
+    font-size: 2rem
+}
+
+button.navbar-toggler {
+    border: none !important;
+    padding: 0px;
+}
+
+.nav-item a {
+   color: white !important;
+   padding: 5px 40px;
+}
+
+.nav-item a:hover{
+   color: #fade00 !important;
+   transition: 0.5s;
+}
+
+li.nav-item {
+    padding: 0 1.5rem;
+}
+
+.navbar {
+    padding: 1rem 0rem !important;
+}
+
+button:focus {
+    outline: none; */
+}
+
+/* Hero Section */
+
+section#hero {
+    background-color: #0B283A;
+    padding: 5rem 0px;
+    color: white;
+}
+
+.promo-title {
+    color: #fade00;
+}
+
+.btn-yellow {
+    background-color: #fade00;
+    border: solid 2px #fade00;
+    border-radius: 0px;
+    padding: 5px 45px;
+}
+
+.btn-yellow:hover {
+    background-color: hsla(120, 100%, 50%, 0.0);
+    color: #fade00;
+    transition: 0.5s;
+}
+
+h1.promo-title {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.hero-info p {
+    padding-bottom: 1.5rem;
+}
+
+.hero-info {
+	padding-top: 5rem;
+}
+
+.hero-img {
+	padding: 0 1rem;
+    padding-top: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+     .hero-img {
+       width: 50%;
+       margin: auto;
+       padding-top: 0px;
+     }
+
+     section#hero {
+     	padding-top: 1rem;
+     }
+}
+
+@media screen and (max-width: 479px) {
+    .hero-info {
+     	padding: 1rem 0;
+     }
+}
+
+/* Services */
+img.service-img {
+    width: 70%;
+    height: 10rem;
+}
+
+h1.title {
+    font-weight: bold;
+    color: #0B283A;
+    padding-bottom: 4rem;
+}
+
+img.service-img {
+    padding-bottom: 2rem;
+}
+
+.services h4 {
+    color: #fade00;
+}
+
+.services a {
+	color: #fade00;
+	text-decoration: none;
+}
+
+.services a:hover {
+	color: #0B283A;
+	transition: 0.5s;
+}
+
+.services {
+    padding-bottom: 4rem;
+}
+
+#services button {
+    margin: auto;
+}
+
+#services {
+	padding-bottom: 10rem;
+}
+
+
+/* about us */
+#about {
+	background-color: #fade00;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#about .title {
+	color: white;
+	font-weight: bold;
+}
+
+#about h2 {
+	color: #0B283A;
+	font-weight: bold;
+	padding-bottom: 1rem;
+}
+
+/* Testimonials */
+#testimonals {
+	background-color: #0B283A;
+	padding: 5rem 0;
+}
+
+#testimonals .title {
+	color: white;
+}
+
+#testimonals p {
+	color: white;
+}
+
+#testimonals img {
+	border-radius: 100%;
+	margin-bottom: 1rem;
+}
+
+.testimonals {
+	border-left:6px solid #fade00;
+}
+
+.client {
+	color: #fade00;
+}
+
+.client-profession {
+	color: white;
+	font-size: 80%;
+}
+
+.client-info {
+	padding-top: 1rem;
+}
+
+/* Case Studies */
+#case-studies {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.case-study img {
+	width: 100%;
+	padding-bottom: 1rem ;
+}
+
+.case-study h3 {
+	color: #0B283A;
+	text-align: left;
+}
+
+.case-study {
+	padding-bottom: 2rem;
+	padding: 2rem;
+}
+
+.btn-tag {
+    border: solid 2px #0B283A;
+    border-radius: 0px;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    color: #0B283A;
+    font-size: 0.8rem;
+}
+
+.btn-tag:hover{
+    border: solid 2px #fade00;
+    color: #fade00;
+    transition: 0.5s;
+}
+
+/* Contact */
+
+#contact {
+	background-color: #fade00;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.btn-blue {
+    background-color: #0B283A;
+    border: solid 2px #0B283A;
+    color: white;
+    border-radius: 0px;
+    padding: 5px 45px;
+}
+
+.btn-blue:hover {
+    background-color: hsla(120, 100%, 50%, 0.0);
+    color: #0B283A;
+    transition: 0.5s;
+}
+
+.contact-img {
+	margin: auto;
+	padding: 2rem;
+}
+
+#contact input {
+    border-radius: 0;
+    border: 0px;
+}
+
+#contact textarea {
+    border-radius: 0;
+    border: 0px;
+}
+
+#contact label {
+    color:#0B283A;
+}
+
+/** Footer **/
+
+#footer {
+    background: #0B283A;
+    padding-top: 5rem;
+    color: white;
+}
+
+#footer img {
+    width:70%;
+    margin:auto;
+}
+
+#footer ul {
+    list-style:none;
+}
+
+#footer a {
+    text-decoration:none;
+    color:white;
+}
+
+#footer a:hover {
+    color:#fade00;
+    transition:0.5s;
+}
+
+
+.modal-nav-content {
+  width: 100%;
+  height: auto;
+}
+
+.modal-nav-body {
+  margin-top: 100px; 
+}
+
+.modal-nav-body ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-nav-body ul li {
+  text-align: center;
+  font-size: 130%;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+
+
