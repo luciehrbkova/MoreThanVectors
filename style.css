@@ -1,5 +1,5 @@
 *{
-	font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 /* Nav bar */
@@ -8,7 +8,7 @@
 }
 
 .navbar-collapse {
-	text-align: right;
+  text-align: right;
 }
 
 section#nav-bar {
@@ -82,11 +82,11 @@ h1.promo-title {
 }
 
 .hero-info {
-	padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .hero-img {
-	padding: 0 1rem;
+  padding: 0 1rem;
     padding-top: 5rem;
 }
 
@@ -98,13 +98,13 @@ h1.promo-title {
      }
 
      section#hero {
-     	padding-top: 1rem;
+      padding-top: 1rem;
      }
 }
 
 @media screen and (max-width: 479px) {
     .hero-info {
-     	padding: 1rem 0;
+      padding: 1rem 0;
      }
 }
 
@@ -124,18 +124,19 @@ img.service-img {
     padding-bottom: 2rem;
 }
 
-.services h4 {
-    color: #fade00;
+.services h3 {
+    color: #0B283A;
+    font-weight: bold;
 }
 
 .services a {
-	color: #fade00;
-	text-decoration: none;
+  color: #fade00;
+  text-decoration: none;
 }
 
 .services a:hover {
-	color: #0B283A;
-	transition: 0.5s;
+  color: #0B283A;
+  transition: 0.5s;
 }
 
 .services {
@@ -147,83 +148,84 @@ img.service-img {
 }
 
 #services {
-	padding-bottom: 10rem;
+  padding-bottom: 10rem;
 }
 
 
 /* about us */
 #about {
-	background-color: #fade00;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+  background-color: #fade00;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #about .title {
-	color: white;
-	font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 #about h2 {
-	color: #0B283A;
-	font-weight: bold;
-	padding-bottom: 1rem;
+  color: #0B283A;
+  font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 /* Testimonials */
 #testimonals {
-	background-color: #0B283A;
-	padding: 5rem 0;
+  background-color: #0B283A;
+  padding: 5rem 0;
 }
 
 #testimonals .title {
-	color: white;
+  color: white;
 }
 
 #testimonals p {
-	color: white;
+  color: white;
 }
 
 #testimonals img {
-	border-radius: 100%;
-	margin-bottom: 1rem;
+  border-radius: 100%;
+  margin-bottom: 1rem;
 }
 
 .testimonals {
-	border-left:6px solid #fade00;
+  border-left:6px solid #fade00;
 }
 
 .client {
-	color: #fade00;
+  color: #fade00;
 }
 
 .client-profession {
-	color: white;
-	font-size: 80%;
+  color: white;
+  font-size: 80%;
 }
 
 .client-info {
-	padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 /* Case Studies */
 #case-studies {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .case-study img {
-	width: 100%;
-	padding-bottom: 1rem ;
+  width: 100%;
+  padding-bottom: 1rem ;
 }
 
 .case-study h3 {
-	color: #0B283A;
-	text-align: left;
+  color: #0B283A;
+  text-align: left;
+  font-weight: bold;
 }
 
 .case-study {
-	padding-bottom: 2rem;
-	padding: 2rem;
+  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .btn-tag {
@@ -244,9 +246,9 @@ img.service-img {
 /* Contact */
 
 #contact {
-	background-color: #fade00;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+  background-color: #fade00;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .btn-blue {
@@ -264,8 +266,8 @@ img.service-img {
 }
 
 .contact-img {
-	margin: auto;
-	padding: 2rem;
+  margin: auto;
+  padding: 2rem;
 }
 
 #contact input {
@@ -287,7 +289,12 @@ img.service-img {
 #footer {
     background: #0B283A;
     padding-top: 5rem;
+    padding-bottom: 4rem;
     color: white;
+}
+
+#footer h4 {
+  color: #fade00;
 }
 
 #footer img {
@@ -309,30 +316,71 @@ img.service-img {
     transition:0.5s;
 }
 
+#footer ul {
+    padding: 2px;
+}
 
-.modal-nav-content {
+#footer i{
+  font-size: 1rem;
+}
+
+.social-media li {
+    float: left;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-logo {
+    margin: auto;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+
+
+
+
+.overlay {
+  height: 100%;
   width: 100%;
-  height: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #0B283A;
+  overflow-x: hidden;
+  transition: 0.6s;
 }
 
-.modal-nav-body {
-  margin-top: 100px; 
+span{
+  font-size: 25px; 
+  cursor: pointer;
 }
 
-.modal-nav-body ul {
-  list-style-type: none;
-  color: white;
-  margin: 0;
-  padding: 0;
+.overlay-content {
+  position: relative;
+  top: 28%;
   width: 100%;
-}
-
-.modal-nav-body ul li {
   text-align: center;
-  font-size: 130%;
-  padding: 8px;
-  text-transform: uppercase;
+  margin-top: 30px;
 }
 
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
 
+.overlay a:hover, .overlay a:focus {
+  color: #fade00;
+}
 
+.overlay .close {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  font-size: 50px;
+}
