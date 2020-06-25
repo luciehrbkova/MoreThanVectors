@@ -15,9 +15,20 @@
 	            <a class="navbar-brand" href="index.php">
 	            	<img src="img/logoWhite.png">
 	            </a>
-	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	                <i class="fa fa-bars" aria-hidden="true"></i>
-	            </button>
+	            <div id="mob-nav" class="overlay">
+					<a href="#" class="close" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Case Studies</a>
+                        <a class="nav-link" href="about.php">About us</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
+					</div>
+				</div>
+	            <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span onclick="openNav()">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</span>	            
+				</button>
 	            <div class="collapse navbar-collapse" id="navbarNav">
 	                <ul class="navbar-nav ml-auto">
 	                    <li class="nav-item">
@@ -67,17 +78,17 @@
 		        <div class="row text-center">
 		            <div class="col-md-4 services">
 		                <img src="img/web.svg" class="service-img ">
-		                <h4> Web Development </h4>
+		                <h3> Web Development </h3>
 		                <p>Our web team provides bespoke website and web app creation, hosting and maintenance.</p>
 		            </div>
 		            <div class="col-md-4 services">
 		                <img src="img/branding.svg" class="service-img">
-		                <h4> Branding </h4>
+		                <h3> Branding </h3>
 		                <p>We build brand identities that are unique & distinctive for you to stand out in the market.</p>
 		            </div>
 		            <div class="col-md-4 services">
 		                <img src="img/video.svg" class="service-img">
-		                <h4> Video Production </h4>
+		                <h3> Video Production </h3>
 		                <p>We deliver carefully created videos made for different Social Media platforms.</p>
 		            </div>
 		            <button type="button" class="btn btn-yellow text-center">Get in touch</button>
@@ -205,24 +216,24 @@
 	    <section id='footer'>
 	    	<div class="container">
 	    		<div class="row">
-	    			<div class="col-md-3">
+	    			<div class="col-6 col-md-3 footer-logo">
 	    				<img src="img/logoWhite.png" class="img-fluid">
 	    			</div>
-	    			<div class="col-md-3">
+	    			<div class="col-6 col-md-3 social-media">
 	    				<h4> Follow us </h4>
 	    				<ul>
 	    					<li>
-	    						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+	    						<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 							</li>
 							<li>
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</li>
 							<li>
-	    						<i class="fa fa-instagram" aria-hidden="true"></i>
+	    						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							</li>
 	    				</ul>
 	    			</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 	    				<h4> Useful links </h4>
 	    				<ul>
 	    					<li>
@@ -239,7 +250,7 @@
 							</li>	    				
 						</ul>
 	    			</div>
-					<div class="col-md-3">
+					<div class="col-6 col-md-3">
 	    				<h4> Quick links </h4>
 	    				<ul>
 	    					<li>
@@ -267,3 +278,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/5ff82a3bf5.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function openNav() {
+		$("#mob-nav").css({
+			'opacity': '1',
+			'width': '100%',
+		});
+	}
+
+	function closeNav() {
+		$("#mob-nav").css({
+			'opacity': '0',
+			'width': '0%',
+		});	}
+</script>
