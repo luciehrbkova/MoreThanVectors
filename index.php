@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body>		
+<body>	
+	<h1>Lucie Lucie teeeeeest</h1>	
 	<!--- Navigation Menu ---->
 	    <section id="nav-bar">
 	    	<div class="container">
